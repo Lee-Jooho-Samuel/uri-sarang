@@ -119,3 +119,17 @@ a:focus-visible { outline:2px solid var(--purple); outline-offset:5px; }
 .editorial .vref { font-weight:500; }
 .editorial sup { font-size:14px; }
 @media(min-width:760px) { .editorial .reading > h2 { font-size:36px; } }
+
+.editorial details.fulltext { max-width:676px; margin:80px auto 0; padding:0 24px; }
+.editorial details.fulltext > summary { list-style:none; cursor:pointer; font-family:'Noto Sans KR',sans-serif; font-weight:700; font-size:17px; color:var(--green); border-top:1px solid var(--green); border-bottom:1px solid var(--green); min-height:52px; display:flex; align-items:center; justify-content:space-between; }
+.editorial details.fulltext > summary::-webkit-details-marker { display:none; }
+.editorial details.fulltext > summary::after { content:'+'; font-size:24px; font-weight:400; }
+.editorial details.fulltext[open] > summary::after { content:'2'; }
+.editorial .fullsec { padding:0; margin:0; }
+.editorial .fullsec h2 { font-family:'Noto Serif KR',serif; font-weight:900; font-size:24px; line-height:1.4; margin:48px 0 24px; }
+.editorial .fullsec p { font-family:'Noto Serif KR',serif; font-size:17px; line-height:1.85; color:#333; margin-bottom:1.1em; }
+.editorial .fullsec p.think { font-family:'Noto Sans KR',sans-serif; }
+
+.editorial details.refs { margin-top:0; }
+.editorial details.refs > summary { border-top:none; }
+.editorial details.refs .notes { margin:24px 0 0; padding:0; border-top:none; }
