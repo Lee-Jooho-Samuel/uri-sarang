@@ -45,3 +45,36 @@ a:focus-visible { outline:2px solid var(--purple); outline-offset:5px; }
 .contents li { margin-bottom:26px; }
 .contents a { font-family:'Noto Sans KR',sans-serif; font-size:19px; }
 @media(min-width:760px) { main { padding-top:56px; } h1 { font-size:42px; } h2 { font-size:28px; } .panel { padding:30px 28px 6px; } }
+
+/* 목록(index) 페이지 */
+.home { background:#FBF6F3; }
+.home main { max-width:none; padding:0; }
+.home-cover { background:#F8D9E1; text-align:center; padding:56px 24px 0; overflow:hidden; }
+.home-kicker { font-family:'Noto Sans KR',sans-serif; font-weight:500; font-size:14px; letter-spacing:0.12em; color:var(--pink); margin:0 0 14px; }
+.home h1 { font-size:44px; line-height:1.25; margin:0 0 8px; }
+.home h1 .accent { color:#c3346b; }
+.home-spot { width:132px; margin:18px auto -6px; }
+.home .contents { list-style:none; max-width:628px; margin:0 auto; padding:40px 18px 8px; display:grid; gap:26px; }
+.home .contents li { margin:0; }
+.lesson-card { display:block; background:#fff; border-radius:18px; overflow:hidden; text-decoration:none; color:inherit; box-shadow:0 1px 2px rgba(48,51,47,.06),0 8px 24px rgba(195,52,107,.08); transition:transform .2s ease,box-shadow .2s ease; }
+.lesson-card img { width:100%; aspect-ratio:1200/509; object-fit:cover; border-bottom:1px solid #f1e4e8; }
+.card-body { display:block; padding:20px 22px 22px; }
+.card-number { display:inline-block; font-family:'Jua',sans-serif; font-size:15px; color:#fff; background:var(--pink); border-radius:999px; padding:1px 12px 0; margin-bottom:10px; }
+.card-title { display:block; font-family:'Jua',sans-serif; font-size:25px; line-height:1.4; color:var(--green); margin-bottom:10px; }
+.card-title .accent { color:#c3346b; }
+.card-line { display:block; font-family:'Noto Serif KR',serif; font-size:16px; line-height:1.75; color:#5d625b; }
+.card-go { display:flex; justify-content:flex-end; align-items:center; gap:6px; font-family:'Noto Sans KR',sans-serif; font-weight:700; font-size:14px; color:var(--green); margin-top:14px; }
+.card-go::after { content:'→'; transition:transform .2s ease; }
+.lesson-card:hover { transform:translateY(-3px); box-shadow:0 2px 4px rgba(48,51,47,.06),0 14px 32px rgba(195,52,107,.14); }
+.lesson-card:hover .card-go::after { transform:translateX(4px); }
+.lesson-card:focus-visible { outline:2px solid var(--purple); outline-offset:4px; }
+.home-foot { font-family:'Jua',sans-serif; text-align:center; color:#b9a7ad; font-size:15px; margin:28px 0 0; padding-bottom:48px; }
+@media(min-width:760px) {
+ .home-cover { padding-top:80px; }
+ .home h1 { font-size:60px; }
+ .home-spot { width:160px; }
+ .home .contents { padding-top:56px; gap:32px; }
+ .card-body { padding:24px 28px 26px; }
+ .card-title { font-size:28px; }
+}
+@media(prefers-reduced-motion:reduce) { .lesson-card,.card-go::after { transition:none; } .lesson-card:hover { transform:none; } }
