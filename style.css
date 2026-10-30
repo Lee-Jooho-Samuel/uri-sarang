@@ -51,7 +51,7 @@ a:focus-visible { outline:2px solid var(--purple); outline-offset:5px; }
 .home main { max-width:none; padding:0; }
 .home-cover { background:#F8D9E1; text-align:center; padding:56px 24px 0; overflow:hidden; }
 .home-kicker { font-family:'Noto Sans KR',sans-serif; font-weight:500; font-size:14px; letter-spacing:0.12em; color:var(--pink); margin:0 0 14px; }
-.home h1 { font-size:44px; line-height:1.25; margin:0 0 8px; }
+.home h1 { font-size:min(44px,11vw); line-height:1.25; margin:0 0 8px; white-space:nowrap; }
 .home h1 .accent { color:#c3346b; }
 .home-spot { width:132px; margin:18px auto -6px; }
 .home .contents { list-style:none; max-width:628px; margin:0 auto; padding:40px 18px 8px; display:grid; gap:26px; }
